@@ -11,8 +11,8 @@ import (
 )
 
 const (
-	salt       = "12OmmPKDPWwdd2442"
-	signingKey = ("$dmvpw424")
+	salt       = "hjqrhjqw124617ajfhajs"
+	signingKey = "qrkjk#4#%35FSFJlja#4353KSFjH"
 	tokenTTL   = 12 * time.Hour
 )
 
@@ -56,6 +56,7 @@ func (s *AuthService) ParseToken(accessToken string) (int, error) {
 		if _, ok := token.Method.(*jwt.SigningMethodHMAC); !ok {
 			return nil, errors.New("invalid signing method")
 		}
+
 		return []byte(signingKey), nil
 	})
 	if err != nil {
