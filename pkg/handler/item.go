@@ -6,7 +6,7 @@ func (h *Handler) createItem(c *gin.Context) {
 
 }
 
-func (h *Handler) getAllItem(c *gin.Context) {
+func (h *Handler) getAllItems(c *gin.Context) {
 
 }
 
